@@ -1,0 +1,1 @@
+SELECT c_id AS 'ID', b_name AS 'Brand', cat_name AS 'Category', c_name AS 'Name', c_description AS 'Description', c_year AS 'Year', c_color AS 'Color', c_seats AS 'Number of Seats', c_price AS 'Price', ac_description AS 'Status' FROM brands, categories, cars, active WHERE c_b_id=b_id AND c_cat_id=cat_id AND c_active=ac_value;
